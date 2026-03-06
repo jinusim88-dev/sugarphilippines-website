@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | SugarPhilippines.com</title>
+  <meta name="description" content="Request a wholesale sugar quote. Provide your company name, sugar type, quantity, and delivery location.">
+  <link rel="canonical" href="https://sugarphilippines.com/contact.html">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <span class="logo">SP</span>
+      <span>SugarPhilippines</span>
+    </a>
+    <nav class="nav">
+      <a href="products/index.html">Products</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn outline" href="tel:+639171234567">Call +63 917 123 4567</a>
+      <a class="btn" href="https://wa.me/639171234567" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="breadcrumbs">Home / Contact</div>
+    <h1>Request a Wholesale Quote</h1>
+    <p>Provide your requirements and we’ll respond with current pricing and availability.</p>
+    <div class="form-card" style="margin-top:1.4rem;">
+      <div class="progress">
+        <span class="active"></span><span></span><span></span>
+      </div>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="form-step active">
+          <h3>Step 1: Company Information</h3>
+          <div class="form-row">
+            <div>
+              <label>Company Name</label>
+              <input type="text" name="company" required>
+            </div>
+            <div>
+              <label>Contact Person</label>
+              <input type="text" name="contact_person" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label>Phone</label>
+              <input type="tel" name="phone" required>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div style="margin-top:1rem;display:flex;justify-content:flex-end;">
+            <button class="btn" type="button" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="form-step">
+          <h3>Step 2: Sugar Requirements</h3>
+          <div class="form-row">
+            <div>
+              <label>Sugar Type Needed</label>
+              <select name="sugar_type" required>
+                <option value="">Select</option>
+                <option>Busco Standard</option>
+                <option>Busco White</option>
+                <option>Busco Raw</option>
+                <option>Mitrphol Refined</option>
+                <option>Passi Refined</option>
+                <option>Other / Multiple</option>
+              </select>
+            </div>
+            <div>
+              <label>Quantity (e.g., 50 sacks)</label>
+              <input type="text" name="quantity" required>
+            </div>
+          </div>
+          <div>
+            <label>Delivery Location</label>
+            <input type="text" name="delivery_location" required>
+          </div>
+          <div style="margin-top:1rem;display:flex;justify-content:space-between;">
+            <button class="btn ghost" type="button" data-prev>Back</button>
+            <button class="btn" type="button" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="form-step">
+          <h3>Step 3: Additional Notes</h3>
+          <div>
+            <label>Notes / Preferred Delivery Date</label>
+            <textarea name="notes" placeholder="Tell us more about your requirements"></textarea>
+          </div>
+          <div style="margin-top:1rem;display:flex;justify-content:space-between;">
+            <button class="btn ghost" type="button" data-prev>Back</button>
+            <button class="btn" type="submit">Submit Request</button>
+          </div>
+        </div>
+      </form>
+      <p style="font-size:.85rem;margin-top:1rem;color:var(--muted)">Prefer to speak directly? Call or WhatsApp for faster processing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container grid-2">
+    <div>
+      <h2>Need immediate assistance?</h2>
+      <p>Our team responds quickly to phone and WhatsApp inquiries.</p>
+    </div>
+    <div style="display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;justify-content:flex-end;">
+      <a class="btn" href="tel:+639171234567">Call Now</a>
+      <a class="btn outline" href="https://wa.me/639171234567" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="color:#fff;">
+        <span class="logo">SP</span>
+        <span>SugarPhilippines</span>
+      </div>
+      <p>Wholesale sugar supplier for bakeries, food manufacturers, and distributors across Luzon.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="list">
+        <li><a href="products/index.html">Products</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="list">
+        <li><a href="tel:+639171234567">+63 917 123 4567</a></li>
+        <li><a href="mailto:sales@sugarphilippines.com">sales@sugarphilippines.com</a></li>
+        <li>Mon-Sat, 8:00 AM - 6:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" style="margin-top:1.2rem;font-size:.85rem;color:#aaa;">© <span id="year"></span> SugarPhilippines. All rights reserved.</div>
+</footer>
+
+<div class="mobile-sticky">
+  <a class="btn" href="contact.html">Get Quote</a>
+  <a class="btn secondary" href="tel:+639171234567">Call</a>
+  <a class="btn outline" href="https://wa.me/639171234567" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
