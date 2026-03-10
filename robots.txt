@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
+# Sitemap
 Sitemap: https://sugarphilippines.com/sitemap.xml
+
+# Disallow thank you page from indexing (optional)
+Disallow: /thanks.html
