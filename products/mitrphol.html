@@ -22,18 +22,34 @@
     <a class="brand" href="../index.html">
       <img src="../assets/logo.svg" alt="Sugar Philippines" style="height: 48px; width: auto;">
     </a>
-    <nav class="nav">
-      <a href="index.html">Products</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Products</a>
       <a href="../locations.html">Locations</a>
+      <a href="../blog/index.html">Blog</a>
       <a href="../about.html">About</a>
       <a href="../contact.html">Contact</a>
     </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
     <div class="header-cta">
       <a class="btn outline" href="tel:+639453955736">Call +63 945 395 5736</a>
       <a class="btn" href="https://wa.me/639453955736" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 </header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="../index.html" data-icon="🏠">Home</a>
+  <a href="index.html" data-icon="📦" class="active">Products</a>
+  <a href="../locations.html" data-icon="📍">Locations</a>
+  <a href="../blog/index.html" data-icon="📝">Blog</a>
+  <a href="../about.html" data-icon="🏢">About</a>
+  <a href="../contact.html" data-icon="✉️">Contact</a>
+  <div class="mobile-cta">
+    <a class="btn" href="../contact.html" style="display:block;margin-bottom:.5rem;">📋 Get Quote</a>
+    <a class="btn outline" href="tel:+639453955736" style="display:block;">📞 Call +63 945 395 5736</a>
+  </div>
+</nav>
 
 <section class="section product-hero">
   <div class="container">

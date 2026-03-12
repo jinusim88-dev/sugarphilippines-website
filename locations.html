@@ -25,26 +25,31 @@
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="products/index.html">Products</a>
-      <a href="locations.html">Locations</a>
+      <a href="locations.html" class="active">Locations</a>
       <a href="blog/index.html">Blog</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" type="button">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
     <div class="header-cta">
       <a class="btn outline" href="tel:+639453955736">Call +63 945 395 5736</a>
       <a class="btn" href="https://wa.me/639453955736" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
-  <div class="mobile-nav" id="mobile-menu" aria-label="Mobile">
-    <a href="index.html">Home</a>
-    <a href="products/index.html">Products</a>
-    <a href="locations.html">Locations</a>
-    <a href="blog/index.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
 </header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="index.html" data-icon="🏠">Home</a>
+  <a href="products/index.html" data-icon="📦">Products</a>
+  <a href="locations.html" data-icon="📍" class="active">Locations</a>
+  <a href="blog/index.html" data-icon="📝">Blog</a>
+  <a href="about.html" data-icon="🏢">About</a>
+  <a href="contact.html" data-icon="✉️">Contact</a>
+  <div class="mobile-cta">
+    <a class="btn" href="contact.html" style="display:block;margin-bottom:.5rem;">📋 Get Quote</a>
+    <a class="btn outline" href="tel:+639453955736" style="display:block;">📞 Call +63 945 395 5736</a>
+  </div>
+</nav>
 
 <section class="section">
   <div class="container">
