@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | SugarPhilippines.com</title>
+<meta name="description" content="Industry guides, sugar buying tips, and updates for bakeries, manufacturers & distributors in the Philippines.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="The Sugar Insider | SugarPhilippines.com">
+<meta property="og:description" content="Guides, industry tips, and updates for bakeries, manufacturers & distributors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sugarphilippines.com/blog/">
+<meta property="og:image" content="https://sugarphilippines.com/assets/og-blog.jpg">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://sugarphilippines.com/blog/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "The Sugar Insider",
+  "description": "Guides, industry tips, and updates for bakeries, manufacturers & distributors.",
+  "url": "https://sugarphilippines.com/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "SugarPhilippines.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sugarphilippines.com/assets/logo.png"
+    }
+  }
+}
+</script>
+
+<style>
+  :root {
+    --gold: #C8952E;
+    --gold-light: #E8C46A;
+    --gold-glow: rgba(200, 149, 46, 0.12);
+    --dark: #1A1611;
+    --dark-soft: #2C261E;
+    --cream: #FBF8F2;
+    --text: #3D3527;
+    --text-light: #7A7062;
+    --white: #FFFFFF;
+    --border: #E8E0D2;
+    --green: #4A7C59;
+    --green-light: #E8F0EB;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold) !important;
+    color: var(--white) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: #B5841F !important; }
+
+  /* BLOG HERO */
+  .blog-hero {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
+    padding: 4rem 2rem 3.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .blog-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .blog-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+    position: relative;
+  }
+  .blog-hero p {
+    color: var(--gold-light);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* CATEGORY PILLS */
+  .categories {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .cat-pill {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border: 1.5px solid var(--border);
+    background: var(--white);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .cat-pill:hover, .cat-pill.active {
+    background: var(--gold);
+    color: var(--white);
+    border-color: var(--gold);
+  }
+
+  /* BLOG GRID */
+  .blog-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1.8rem;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: transform 0.25s, box-shadow 0.25s;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  }
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  .card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+  .card-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--green);
+    background: var(--green-light);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.7rem;
+    width: fit-content;
+  }
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+  .card-title a { color: inherit; text-decoration: none; }
+  .card-title a:hover { color: var(--gold); }
+  .card-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    flex: 1;
+  }
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    border-top: 1px solid var(--border);
+    padding-top: 0.9rem;
+  }
+  .read-more {
+    font-weight: 600;
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .read-more:hover { color: #B5841F; }
+
+  /* FEATURED */
+  .featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid var(--gold-glow);
+  }
+  .featured .card-img { height: 100%; min-height: 300px; }
+  .featured .card-body { padding: 2rem; justify-content: center; }
+  .featured .card-title { font-size: 1.55rem; }
+
+  /* ARTICLE VIEW */
+  .article-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+  }
+  .article-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+  }
+  .article-back:hover { color: var(--gold); }
+  .article-header .card-tag { font-size: 0.75rem; margin-bottom: 1rem; }
+  .article-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--dark);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+  .article-header .article-meta {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .article-cover {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin: 2rem 0 0.8rem;
+  }
+  .article-body p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .article-body ul {
+    margin: 0 0 1.2rem 1.4rem;
+    color: var(--text);
+  }
+  .article-body li { margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+  /* CTA BOX */
+  .cta-box {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .cta-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .cta-box p {
+    color: var(--gold-light);
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+  }
+  .cta-box .btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.92rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .cta-box .btn:hover { background: #B5841F; }
+
+  footer {
+    background: var(--dark);
+    color: var(--gold-light);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.82rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .featured { grid-template-columns: 1fr; }
+    .featured .card-img { min-height: 200px; }
+    .blog-hero h1 { font-size: 2rem; }
+    .nav-links a:not(.nav-cta) { display: none; }
+    .article-header h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Sugar<span>Philippines</span></a>
+    <div class="nav-links">
+      <a href="/products">Products</a>
+      <a href="/locations">Locations</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="/about">About</a>
+      <a href="/contact" class="nav-cta">Get Quote</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BLOG LISTING VIEW -->
+<div id="listView">
+
+  <div class="blog-hero">
+    <h1>The Sugar Insider</h1>
+    <p>Guides, industry tips, and updates for bakeries, manufacturers &amp; distributors.</p>
+  </div>
+
+  <div class="categories">
+    <span class="cat-pill active" onclick="filterCat(this)">All</span>
+    <span class="cat-pill" onclick="filterCat(this)">Product Guides</span>
+    <span class="cat-pill" onclick="filterCat(this)">Industry News</span>
+    <span class="cat-pill" onclick="filterCat(this)">Storage &amp; Tips</span>
+    <span class="cat-pill" onclick="filterCat(this)">Behind the Scenes</span>
+  </div>
+
+  <div class="blog-grid">
+
+    <!-- FEATURED POST -->
+    <article class="card featured" data-cat="Product Guides">
+      <img class="card-img" src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=700&h=450&fit=crop" alt="Different types of sugar">
+      <div class="card-body">
+        <span class="card-tag">Product Guide</span>
+        <h2 class="card-title"><a href="#" onclick="showArticle(); return false;">Raw vs. Refined vs. Washed: Which Sugar Does Your Business Need?</a></h2>
+        <p class="card-excerpt">Not all sugar is created equal. Whether you run a bakery, manufacture beverages, or distribute to retail, choosing the right type of sugar directly affects your product quality and your bottom line.</p>
+        <div class="card-meta">
+          <span>March 10, 2026 · 4 min read</span>
+          <a href="#" class="read-more" onclick="showArticle(); return false;">Read More →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 2 -->
+    <article class="card" data-cat="Storage &amp; Tips" style="opacity:0.7;">
+      <img class="card-img" src="https://images.unsplash.com/photo-1604689598793-b8bf1dc445a1?w=600&h=400&fit=crop" alt="Warehouse storage">
+      <div class="card-body">
+        <span class="card-tag" style="color:#C8952E; background:var(--gold-glow);">Storage &amp; Tips</span>
+        <h2 class="card-title" style="color:var(--text-light);">How to Store Bulk Sugar Properly (and Avoid Costly Waste)</h2>
+        <p class="card-excerpt">Improper storage is one of the biggest causes of sugar loss for businesses. Learn the essentials of temperature, humidity, and stacking to protect your inventory.</p>
+        <div class="card-meta">
+          <span>Coming Soon</span>
+          <span style="color:var(--text-light); font-weight:500;">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 3 -->
+    <article class="card" data-cat="Industry News" style="opacity:0.7;">
+      <img class="card-img" src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=600&h=400&fit=crop" alt="Sugar cane fields">
+      <div class="card-body">
+        <span class="card-tag" style="color:#7A5C2E; background:#F5ECD8;">Industry News</span>
+        <h2 class="card-title" style="color:var(--text-light);">2026 Milling Season Update: What Buyers Should Expect</h2>
+        <p class="card-excerpt">A look at this year's crop yield forecasts, SRA import allocations, and what they mean for wholesale pricing across Luzon and Visayas.</p>
+        <div class="card-meta">
+          <span>Coming Soon</span>
+          <span style="color:var(--text-light); font-weight:500;">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 4 -->
+    <article class="card" data-cat="Behind the Scenes" style="opacity:0.7;">
+      <img class="card-img" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Delivery logistics">
+      <div class="card-body">
+        <span class="card-tag" style="color:#4A5C7A; background:#E8ECF0;">Behind the Scenes</span>
+        <h2 class="card-title" style="color:var(--text-light);">From Mill to Your Door: How We Handle Logistics</h2>
+        <p class="card-excerpt">Go behind the scenes of our 48-72 hour dispatch process, from quality inspection at the mill to coordinated delivery at your facility.</p>
+        <div class="card-meta">
+          <span>Coming Soon</span>
+          <span style="color:var(--text-light); font-weight:500;">—</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD 5 -->
+    <article class="card" data-cat="Product Guides" style="opacity:0.7;">
+      <img class="card-img" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop" alt="Bakery">
+      <div class="card-body">
+        <span class="card-tag">Product Guide</span>
+        <h2 class="card-title" style="color:var(--text-light);">Busco Premium vs. Mitrphol: A Side-by-Side for Bakeries</h2>
+        <p class="card-excerpt">Two of the most popular refined sugars in our lineup. We compare granulation, sweetness, solubility, and price to help you choose the right fit.</p>
+        <div class="card-meta">
+          <span>Coming Soon</span>
+          <span style="color:var(--text-light); font-weight:500;">—</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- ARTICLE VIEW (sample full post) -->
+<div id="articleView" style="display:none;">
+  <div class="article-wrapper">
+    <a href="/blog" class="article-back">← Back to Blog</a>
+
+    <div class="article-header">
+      <span class="card-tag">Product Guide</span>
+      <h1>Raw vs. Refined vs. Washed: Which Sugar Does Your Business Need?</h1>
+      <div class="article-meta">March 10, 2026 · 4 min read</div>
+    </div>
+
+    <img class="article-cover" src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=900&h=450&fit=crop" alt="Different types of sugar">
+
+    <div class="article-body">
+      <p>If you're buying sugar in bulk, you've probably come across different labels — raw, refined, and washed. But what do these actually mean for your products, your costs, and your operations?</p>
+      <p>Here's a practical breakdown to help you choose the right type for your business.</p>
+
+      <h2>Refined Sugar</h2>
+      <p>Refined sugar goes through the most processing. It's white, fine-grained, and dissolves quickly. This makes it ideal for applications where clarity and consistency matter — think beverages, confectionery, and white bread.</p>
+      <p><strong>Best for:</strong> Bakeries making pastries, cakes, and white bread. Beverage manufacturers. Any product where the sugar needs to dissolve cleanly without adding color.</p>
+      <p><strong>Brands we carry:</strong> Busco Premium, Mitrphol Refined Sugar.</p>
+
+      <h2>Raw Sugar</h2>
+      <p>Raw sugar retains some of the natural molasses from the cane. It has a golden-brown color, slightly larger crystals, and a mild caramel flavor. It costs less than refined sugar and works well when color isn't a concern.</p>
+      <p><strong>Best for:</strong> Food manufacturers, sauces, kakanin, and products where a bit of color and natural flavor is acceptable. Also popular as a feedstock for re-processing.</p>
+      <p><strong>Brands we carry:</strong> Biscom Raw.</p>
+
+      <h2>Washed Sugar</h2>
+      <p>Washed sugar sits between raw and refined. The outer molasses layer is washed off, but it doesn't go through full refining. The result is a lighter color than raw, at a lower cost than refined.</p>
+      <p><strong>Best for:</strong> Commercial kitchens, bakeries producing pan de sal or ensaymada, and operations that want a balance of quality and budget.</p>
+      <p><strong>Brands we carry:</strong> Passi Washed Sugar.</p>
+
+      <h2>Quick Comparison</h2>
+      <p>Here's how they stack up:</p>
+      <ul>
+        <li><strong>Color:</strong> Refined (white) → Washed (off-white) → Raw (golden brown)</li>
+        <li><strong>Price:</strong> Raw (lowest) → Washed (mid) → Refined (highest)</li>
+        <li><strong>Dissolving speed:</strong> Refined (fastest) → Washed → Raw (slowest)</li>
+        <li><strong>Best use:</strong> Depends on your product's requirements for color, taste, and texture</li>
+      </ul>
+
+      <h2>Not Sure Which One You Need?</h2>
+      <p>If you're still deciding, the best approach is to tell us what you're producing. We've worked with bakeries, beverage companies, and distributors for over 30 years — we can match you with the right sugar type and volume.</p>
+    </div>
+
+    <div class="cta-box">
+      <h3>Need a Quote?</h3>
+      <p>Tell us your sugar type, quantity, and delivery location. We respond same day.</p>
+      <a href="/contact" class="btn">Get a Quote →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 SugarPhilippines.com · Wholesale Sugar Supplier · All rights reserved.
+</footer>
+
+<script>
+  function showArticle() {
+    document.getElementById('listView').style.display = 'none';
+    document.getElementById('articleView').style.display = 'block';
+    window.scrollTo(0, 0);
+    // Update URL for sharing (doesn't reload page)
+    history.pushState({view: 'article'}, '', '/blog/raw-vs-refined-vs-washed');
+  }
+  function showList() {
+    document.getElementById('articleView').style.display = 'none';
+    document.getElementById('listView').style.display = 'block';
+    window.scrollTo(0, 0);
+    history.pushState({view: 'list'}, '', '/blog/');
+  }
+  function filterCat(el) {
+    document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    const cat = el.textContent;
+    document.querySelectorAll('.blog-grid .card').forEach(card => {
+      card.style.display = (cat === 'All' || card.dataset.cat === cat) ? '' : 'none';
+    });
+  }
+  // Handle back button
+  window.onpopstate = function(e) {
+    if (e.state && e.state.view === 'list') {
+      showList();
+    }
+  };
+</script>
+
+</body>
+</html>
