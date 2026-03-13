@@ -2,57 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sugarphilippines.com/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/about.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/about/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/contact.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/contact/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/locations.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/locations/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sugarphilippines.com/products/</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/products/busco-standard.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/busco-standard/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/products/busco-white.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/busco-white/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/products/biscom-raw.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/busco-raw/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/products/mitrphol.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/biscom-raw/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/products/passi.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/mitrphol/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sugarphilippines.com/thanks.html</loc>
-    <lastmod>2026-03-11</lastmod>
+    <loc>https://sugarphilippines.com/products/passi/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sugarphilippines.com/products/vmc-refined-sugar/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sugarphilippines.com/products/sonedco-refined-sugar/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sugarphilippines.com/blog/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugarphilippines.com/thanks/</loc>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>
