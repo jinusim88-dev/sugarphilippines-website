@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    { "source": "/about.html", "destination": "/about/", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact/", "permanent": true },
+    { "source": "/locations.html", "destination": "/locations/", "permanent": true },
+    { "source": "/thanks.html", "destination": "/thanks/", "permanent": true },
+    { "source": "/products/busco-standard.html", "destination": "/products/busco-standard/", "permanent": true },
+    { "source": "/products/busco-white.html", "destination": "/products/busco-white/", "permanent": true },
+    { "source": "/products/busco-raw.html", "destination": "/products/busco-raw/", "permanent": true },
+    { "source": "/products/biscom-raw.html", "destination": "/products/biscom-raw/", "permanent": true },
+    { "source": "/products/mitrphol.html", "destination": "/products/mitrphol/", "permanent": true },
+    { "source": "/products/passi.html", "destination": "/products/passi/", "permanent": true },
+    { "source": "/products/vmc-refined-sugar.html", "destination": "/products/vmc-refined-sugar/", "permanent": true },
+    { "source": "/products/sonedco-refined-sugar.html", "destination": "/products/sonedco-refined-sugar/", "permanent": true }
+  ]
+}
