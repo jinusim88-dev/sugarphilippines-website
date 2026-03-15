@@ -360,6 +360,39 @@
 </style>
 </head>
 <body>
+<header>
+  <div class="container topbar">
+    <a class="brand" href="/">
+      <img src="/assets/logo.svg" alt="Sugar Philippines" style="height: 48px; width: auto;">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/products/">Products</a>
+      <a href="/locations/">Locations</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    <div class="header-cta">
+      <a class="btn outline" href="/contact/">Get Quote</a>
+      <a class="btn" href="https://wa.me/639453955736" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="/" data-icon="🏠">Home</a>
+  <a href="/products/" data-icon="📦">Products</a>
+  <a href="/locations/" data-icon="📍">Locations</a>
+  <a href="/blog/" data-icon="📝" class="active">Blog</a>
+  <a href="/about/" data-icon="ℹ️">About</a>
+  <a href="/contact/" data-icon="✉️">Contact</a>
+  <div class="mobile-cta">
+    <a class="btn" href="/contact/" style="display:block;margin-bottom:.5rem;" data-icon="📋">Get Quote</a>
+    <a class="btn outline" href="https://wa.me/639453955736" style="display:block;" target="_blank" rel="noopener" data-icon="💬">WhatsApp</a>
+  </div>
+</nav>
 
 <!-- NAV -->
 <nav>
@@ -568,6 +601,11 @@
 </script>
 
 
+<div class="mobile-sticky">
+  <a class="btn" href="/contact/">Get Quote</a>
+  <a class="btn secondary" href="tel:+639453955736">Call</a>
+  <a class="btn outline" href="https://wa.me/639453955736" target="_blank" rel="noopener">WhatsApp</a>
+</div>
 </body>
 </html>
 
